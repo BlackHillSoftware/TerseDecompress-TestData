@@ -73,3 +73,16 @@ The test data itself is in the following directories:
 | TERSED    | Tersed z/OS datasets                                                   | 
 | ZOSBINARY | Data transferred from z/OS using BINARY and SITE RDW options           |
 | ZOSTEXT   | Data transferred from z/OS using ASCII and SITE TRAILINGBLANKS options |
+
+
+### Notes
+
+#### File TERSED/FB.A.TXT.SPACK (Artificial/a.txt)
+
+Compression of a single character dataset using SPACK seems to be broken. This file fails unit tests, however it also uncompresses incorrectly using AMATERSE on z/OS.
+
+#### File TERSED/VB.ENWIK8.XML.PACK (enwik8.xml)
+
+Compression of this file results in repeated messages:
+
+AMA513I  AN EMPTY RECORD WAS FOUND. THE DATA SET MIGHT NOT BE ABLE TO BE UNPACKED ON OTHER OPERATING SYSTEMS 

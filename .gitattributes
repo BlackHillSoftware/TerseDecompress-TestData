@@ -1,0 +1,4 @@
+TERSED/** filter=lfs diff=lfs merge=lfs -text
+ZOSBINARY/** filter=lfs diff=lfs merge=lfs -text
+ZOSTEXT/** filter=lfs diff=lfs merge=lfs -text
+CanterburyCorpus/enwik8.xml filter=lfs diff=lfs merge=lfs -text
